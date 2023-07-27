@@ -6,6 +6,11 @@ class MessagesController < ApplicationController
     @messages = Message.all
   end
 
+  def random_greeting
+    random_message = Message.order("RANDOM()").first
+    render json: { greeting: random_message&.greet }
+  end
+
   # GET /messages/1 or /messages/1.json
   def show
   end
