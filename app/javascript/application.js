@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Greeting from './src/componenets/Greeting'
+import { Provider } from 'react-redux';
+import { store } from './src/redux/store';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: '',
+      element: <Greeting />,
+    },
+  ]);
   return (
-    <BrowserRouter>
-      <Route path='/' element={<Greeting/>}>
-        <Route index path element={<Greeting/>}/>
-      </Route>
-    </BrowserRouter>
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   );
 }
 
