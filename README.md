@@ -6,7 +6,6 @@
 - [📖 React With Rails ](#-react-with-rails-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
-  - [🚀 Live Demo ](#-live-demo-)
     - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Setup](#setup)
@@ -57,9 +56,9 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<!-- ## 🚀 Live Demo <a name="live-demo"></a>
 
-- `N/A`
+- `N/A` -->
 
 <!-- Features -->
 
